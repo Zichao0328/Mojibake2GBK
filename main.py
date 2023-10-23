@@ -1,16 +1,21 @@
 # This is a sample Python script.
+import wx
+
+from MainFrame import MainFrame
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class AppFrame(MainFrame):
+    pass
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    app = wx.App(False)
+    nwid = AppFrame(None)
+    nwid.Show()
+    app.MainLoop()
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
