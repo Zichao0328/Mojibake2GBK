@@ -63,6 +63,7 @@ if __name__ == '__main__':
     # file_names = rename_files(path)
     app = wx.App(False)
     nwid = AppFrame(None)
+    nwid.SetTitle(f'DLSite 同人作品日文乱码转换工具 v{VERSION}')
     nwid.Show()
     app.MainLoop()
 
