@@ -40,8 +40,14 @@ class MainFrame ( wx.Frame ):
 		self.Layout()
 		
 		self.Centre( wx.BOTH )
+
+		# Connect Events
+		self.dirPicker.Bind(wx.EVT_DIRPICKER_CHANGED, self.on_dir_changed_event)
 	
 	def __del__( self ):
 		pass
-	
 
+
+	# Virtual event handlers, override them in your derived class
+	def on_dir_changed_event(self, event):
+		event.Skip()
