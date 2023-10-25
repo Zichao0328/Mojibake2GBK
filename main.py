@@ -4,7 +4,7 @@ import os
 from MainFrame import MainFrame
 from Renamer import Renamer
 
-VERSION = '0.1.0'
+VERSION = '0.2.0'
 
 
 class MyFileDropTarget(wx.FileDropTarget):
