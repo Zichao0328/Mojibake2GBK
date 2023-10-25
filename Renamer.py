@@ -21,4 +21,4 @@ class Renamer(object):
             old_path, old_name = os.path.split(abs_path)
             new_name = old_name.encode('gbk').decode('shift_jis')
             os.rename(abs_path, os.path.join(old_path, new_name))
-        return file_abs_path
+        return len(file_abs_path)
